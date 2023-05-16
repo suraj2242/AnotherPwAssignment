@@ -144,11 +144,32 @@ nav ul{
 .grid-container .item {
   width: 50vw;
 }
+.main{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-left{
+  padding: 0 0;
+  width: 75%;
+  margin-bottom: 5rem;
+}
+.main-right{
+width: 100vw;
+text-align: center;
+margin-bottom: 5rem;
+}
 .main-left h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .main-left h2 {
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+.main-left > h1,
+.main-left > h2 {
+  padding-left: 0;
+  text-align: center;
 }
 
 }
