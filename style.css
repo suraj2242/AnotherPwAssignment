@@ -1,0 +1,154 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #111827;
+}
+nav {
+  padding: 3rem;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: right;
+  align-items: center;
+}
+header ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+  color: #fff;
+}
+.selected-option {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background-color: #6464e0;
+}
+.hamburger {
+  display: none;
+  width: 3rem;
+}
+.hamburger img{
+  width: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #111827;
+}
+.main-left {
+  width: 50vw;
+  background-color: #111827;
+  color: #fff;
+}
+.main-left > h1,
+.main-left > h2 {
+  padding-left: 40%;
+}
+.main-left h1 {
+  font-size: 7rem;
+}
+.main-left h2 {
+  font-size: 4rem;
+}
+.Developer {
+  color: #c5c559;
+}
+.main-right {
+  width: 50vw;
+  background-color: #111827;
+}
+.main-right img {
+  width: 60%;
+}
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  background-color: #111827;
+  color: #fff;
+}
+.divider {
+  height: 1.5rem;
+  width: 100%;
+  background-color: #0000ff;
+  border-radius: 1rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+.grid-container .item {
+  width: 17vw;
+}
+.grid-container .item img {
+  object-fit: cover;
+  width: 100%;
+}
+.item p {
+  font-size: 2rem;
+  text-align: center;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  background-color: #111827;
+  color: #fff;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 2rem;
+}
+.social .icon {
+  width: 5rem;
+}
+.social .icon img {
+  object-fit: cover;
+  width: 100%;
+}
+
+
+/* Media Query: for smart phones */
+@media screen and (max-width:576px) {
+  .hamburger {
+  display: block;
+}
+nav ul{
+  display: none;
+}
+.grid-container{
+  grid-template-columns: 1fr;
+}
+.grid-container .item {
+  width: 50vw;
+}
+.main-left h1 {
+  font-size: 4rem;
+}
+.main-left h2 {
+  font-size: 2rem;
+}
+
+}
